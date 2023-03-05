@@ -1,0 +1,168 @@
+Log for machine 2 with rate 5 
+Internal event; System Time: 2023-03-05 14:31:40.593598; Logical clock: 1 
+Internal event; System Time: 2023-03-05 14:31:40.793831; Logical clock: 2 
+Send message 2 to port(s) 53048; System Time: 2023-03-05 14:31:40.994119; Logical clock: 3 
+Internal event; System Time: 2023-03-05 14:31:41.194313; Logical clock: 4 
+Received message; System Time: 2023-03-05 14:31:41.394563; Logical clock: 4 
+Received message; System Time: 2023-03-05 14:31:41.594785; Logical clock: 4 
+Internal event; System Time: 2023-03-05 14:31:41.795044; Logical clock: 5 
+Internal event; System Time: 2023-03-05 14:31:41.995284; Logical clock: 6 
+Send message 1 to port(s) 49908; System Time: 2023-03-05 14:31:42.195598; Logical clock: 7 
+Send message 2 to port(s) 53048; System Time: 2023-03-05 14:31:42.395822; Logical clock: 8 
+Internal event; System Time: 2023-03-05 14:31:42.595991; Logical clock: 9 
+Internal event; System Time: 2023-03-05 14:31:42.796147; Logical clock: 10 
+Internal event; System Time: 2023-03-05 14:31:42.996398; Logical clock: 11 
+Internal event; System Time: 2023-03-05 14:31:43.196633; Logical clock: 12 
+Send message 2 to port(s) 53048; System Time: 2023-03-05 14:31:43.396932; Logical clock: 13 
+Send message 1 to port(s) 49908; System Time: 2023-03-05 14:31:43.597156; Logical clock: 14 
+Internal event; System Time: 2023-03-05 14:31:43.797357; Logical clock: 15 
+Send message 2 to port(s) 53048; System Time: 2023-03-05 14:31:43.997670; Logical clock: 16 
+Internal event; System Time: 2023-03-05 14:31:44.197860; Logical clock: 17 
+Internal event; System Time: 2023-03-05 14:31:44.398144; Logical clock: 18 
+Internal event; System Time: 2023-03-05 14:31:44.598368; Logical clock: 19 
+Internal event; System Time: 2023-03-05 14:31:44.798605; Logical clock: 20 
+Internal event; System Time: 2023-03-05 14:31:44.998859; Logical clock: 21 
+Send message 3 to port(s) <map object at 0x7f0491a60730>; System Time: 2023-03-05 14:31:45.199196; Logical clock: 22 
+Send message 1 to port(s) 49908; System Time: 2023-03-05 14:31:45.399363; Logical clock: 23 
+Internal event; System Time: 2023-03-05 14:31:45.599572; Logical clock: 24 
+Internal event; System Time: 2023-03-05 14:31:45.799809; Logical clock: 25 
+Received message; System Time: 2023-03-05 14:31:46.000038; Logical clock: 25 
+Internal event; System Time: 2023-03-05 14:31:46.200160; Logical clock: 26 
+Internal event; System Time: 2023-03-05 14:31:46.400394; Logical clock: 27 
+Internal event; System Time: 2023-03-05 14:31:46.600610; Logical clock: 28 
+Send message 3 to port(s) <map object at 0x7f0491a60700>; System Time: 2023-03-05 14:31:46.800914; Logical clock: 29 
+Internal event; System Time: 2023-03-05 14:31:47.001084; Logical clock: 30 
+Internal event; System Time: 2023-03-05 14:31:47.201318; Logical clock: 31 
+Received message; System Time: 2023-03-05 14:31:47.401557; Logical clock: 31 
+Send message 2 to port(s) 53048; System Time: 2023-03-05 14:31:47.601824; Logical clock: 32 
+Send message 3 to port(s) <map object at 0x7f0491a60730>; System Time: 2023-03-05 14:31:47.802118; Logical clock: 33 
+Internal event; System Time: 2023-03-05 14:31:48.002271; Logical clock: 34 
+Send message 3 to port(s) <map object at 0x7f0491a606d0>; System Time: 2023-03-05 14:31:48.202594; Logical clock: 35 
+Internal event; System Time: 2023-03-05 14:31:48.402777; Logical clock: 36 
+Send message 2 to port(s) 53048; System Time: 2023-03-05 14:31:48.603055; Logical clock: 37 
+Internal event; System Time: 2023-03-05 14:31:48.803249; Logical clock: 38 
+Received message; System Time: 2023-03-05 14:31:49.003430; Logical clock: 38 
+Send message 3 to port(s) <map object at 0x7f0491a60730>; System Time: 2023-03-05 14:31:49.203758; Logical clock: 39 
+Internal event; System Time: 2023-03-05 14:31:49.403822; Logical clock: 40 
+Internal event; System Time: 2023-03-05 14:31:49.604064; Logical clock: 41 
+Internal event; System Time: 2023-03-05 14:31:49.804170; Logical clock: 42 
+Internal event; System Time: 2023-03-05 14:31:50.004402; Logical clock: 43 
+Internal event; System Time: 2023-03-05 14:31:50.204653; Logical clock: 44 
+Received message; System Time: 2023-03-05 14:31:50.404885; Logical clock: 44 
+Internal event; System Time: 2023-03-05 14:31:50.605127; Logical clock: 45 
+Internal event; System Time: 2023-03-05 14:31:50.805379; Logical clock: 46 
+Send message 3 to port(s) <map object at 0x7f0491a60700>; System Time: 2023-03-05 14:31:51.005663; Logical clock: 47 
+Internal event; System Time: 2023-03-05 14:31:51.205844; Logical clock: 48 
+Send message 1 to port(s) 49908; System Time: 2023-03-05 14:31:51.406155; Logical clock: 49 
+Internal event; System Time: 2023-03-05 14:31:51.606331; Logical clock: 50 
+Internal event; System Time: 2023-03-05 14:31:51.806466; Logical clock: 51 
+Internal event; System Time: 2023-03-05 14:31:52.006719; Logical clock: 52 
+Internal event; System Time: 2023-03-05 14:31:52.206771; Logical clock: 53 
+Internal event; System Time: 2023-03-05 14:31:52.407017; Logical clock: 54 
+Send message 2 to port(s) 53048; System Time: 2023-03-05 14:31:52.607288; Logical clock: 55 
+Internal event; System Time: 2023-03-05 14:31:52.807491; Logical clock: 56 
+Received message; System Time: 2023-03-05 14:31:53.007747; Logical clock: 56 
+Internal event; System Time: 2023-03-05 14:31:53.207985; Logical clock: 57 
+Internal event; System Time: 2023-03-05 14:31:53.408155; Logical clock: 58 
+Internal event; System Time: 2023-03-05 14:31:53.608379; Logical clock: 59 
+Internal event; System Time: 2023-03-05 14:31:53.808626; Logical clock: 60 
+Received message; System Time: 2023-03-05 14:31:54.008859; Logical clock: 60 
+Send message 2 to port(s) 53048; System Time: 2023-03-05 14:31:54.209173; Logical clock: 61 
+Internal event; System Time: 2023-03-05 14:31:54.409364; Logical clock: 62 
+Internal event; System Time: 2023-03-05 14:31:54.609575; Logical clock: 63 
+Internal event; System Time: 2023-03-05 14:31:54.809818; Logical clock: 64 
+Received message; System Time: 2023-03-05 14:31:55.010054; Logical clock: 64 
+Send message 3 to port(s) <map object at 0x7f0491a60730>; System Time: 2023-03-05 14:31:55.210345; Logical clock: 65 
+Internal event; System Time: 2023-03-05 14:31:55.410529; Logical clock: 66 
+Internal event; System Time: 2023-03-05 14:31:55.610751; Logical clock: 67 
+Send message 2 to port(s) 53048; System Time: 2023-03-05 14:31:55.811089; Logical clock: 68 
+Send message 3 to port(s) <map object at 0x7f0491a60700>; System Time: 2023-03-05 14:31:56.011337; Logical clock: 69 
+Send message 2 to port(s) 53048; System Time: 2023-03-05 14:31:56.211539; Logical clock: 70 
+Internal event; System Time: 2023-03-05 14:31:56.411744; Logical clock: 71 
+Internal event; System Time: 2023-03-05 14:31:56.611971; Logical clock: 72 
+Internal event; System Time: 2023-03-05 14:31:56.812147; Logical clock: 73 
+Internal event; System Time: 2023-03-05 14:31:57.012383; Logical clock: 74 
+Internal event; System Time: 2023-03-05 14:31:57.212633; Logical clock: 75 
+Internal event; System Time: 2023-03-05 14:31:57.412873; Logical clock: 76 
+Received message; System Time: 2023-03-05 14:31:57.613093; Logical clock: 76 
+Internal event; System Time: 2023-03-05 14:31:57.813350; Logical clock: 77 
+Send message 2 to port(s) 53048; System Time: 2023-03-05 14:31:58.013635; Logical clock: 78 
+Send message 3 to port(s) <map object at 0x7f0491a606d0>; System Time: 2023-03-05 14:31:58.213925; Logical clock: 79 
+Internal event; System Time: 2023-03-05 14:31:58.414091; Logical clock: 80 
+Internal event; System Time: 2023-03-05 14:31:58.614322; Logical clock: 81 
+Internal event; System Time: 2023-03-05 14:31:58.814573; Logical clock: 82 
+Internal event; System Time: 2023-03-05 14:31:59.014817; Logical clock: 83 
+Send message 1 to port(s) 49908; System Time: 2023-03-05 14:31:59.215120; Logical clock: 84 
+Internal event; System Time: 2023-03-05 14:31:59.415310; Logical clock: 85 
+Internal event; System Time: 2023-03-05 14:31:59.615544; Logical clock: 86 
+Internal event; System Time: 2023-03-05 14:31:59.815791; Logical clock: 87 
+Internal event; System Time: 2023-03-05 14:32:00.015829; Logical clock: 88 
+Internal event; System Time: 2023-03-05 14:32:00.216081; Logical clock: 89 
+Received message; System Time: 2023-03-05 14:32:00.416172; Logical clock: 89 
+Internal event; System Time: 2023-03-05 14:32:00.616401; Logical clock: 90 
+Send message 3 to port(s) <map object at 0x7f0491a60700>; System Time: 2023-03-05 14:32:00.816685; Logical clock: 91 
+Internal event; System Time: 2023-03-05 14:32:01.016877; Logical clock: 92 
+Internal event; System Time: 2023-03-05 14:32:01.217130; Logical clock: 93 
+Internal event; System Time: 2023-03-05 14:32:01.417375; Logical clock: 94 
+Send message 1 to port(s) 49908; System Time: 2023-03-05 14:32:01.617651; Logical clock: 95 
+Internal event; System Time: 2023-03-05 14:32:01.817857; Logical clock: 96 
+Internal event; System Time: 2023-03-05 14:32:02.018104; Logical clock: 97 
+Send message 3 to port(s) <map object at 0x7f0491a60730>; System Time: 2023-03-05 14:32:02.218395; Logical clock: 98 
+Send message 3 to port(s) <map object at 0x7f0491a606d0>; System Time: 2023-03-05 14:32:02.418656; Logical clock: 99 
+Send message 2 to port(s) 53048; System Time: 2023-03-05 14:32:02.618872; Logical clock: 100 
+Send message 3 to port(s) <map object at 0x7f0491a60730>; System Time: 2023-03-05 14:32:02.819147; Logical clock: 101 
+Internal event; System Time: 2023-03-05 14:32:03.019243; Logical clock: 102 
+Internal event; System Time: 2023-03-05 14:32:03.219480; Logical clock: 103 
+Internal event; System Time: 2023-03-05 14:32:03.419743; Logical clock: 104 
+Internal event; System Time: 2023-03-05 14:32:03.619970; Logical clock: 105 
+Internal event; System Time: 2023-03-05 14:32:03.820178; Logical clock: 106 
+Send message 2 to port(s) 53048; System Time: 2023-03-05 14:32:04.020474; Logical clock: 107 
+Internal event; System Time: 2023-03-05 14:32:04.220673; Logical clock: 108 
+Internal event; System Time: 2023-03-05 14:32:04.420920; Logical clock: 109 
+Internal event; System Time: 2023-03-05 14:32:04.621149; Logical clock: 110 
+Internal event; System Time: 2023-03-05 14:32:04.821406; Logical clock: 111 
+Send message 2 to port(s) 53048; System Time: 2023-03-05 14:32:05.021678; Logical clock: 112 
+Send message 3 to port(s) <map object at 0x7f0491a60700>; System Time: 2023-03-05 14:32:05.221976; Logical clock: 113 
+Send message 2 to port(s) 53048; System Time: 2023-03-05 14:32:05.422190; Logical clock: 114 
+Internal event; System Time: 2023-03-05 14:32:05.622364; Logical clock: 115 
+Send message 2 to port(s) 53048; System Time: 2023-03-05 14:32:05.822674; Logical clock: 116 
+Internal event; System Time: 2023-03-05 14:32:06.022866; Logical clock: 117 
+Internal event; System Time: 2023-03-05 14:32:06.223009; Logical clock: 118 
+Internal event; System Time: 2023-03-05 14:32:06.423275; Logical clock: 119 
+Internal event; System Time: 2023-03-05 14:32:06.623503; Logical clock: 120 
+Send message 1 to port(s) 49908; System Time: 2023-03-05 14:32:06.823773; Logical clock: 121 
+Internal event; System Time: 2023-03-05 14:32:07.023991; Logical clock: 122 
+Internal event; System Time: 2023-03-05 14:32:07.224238; Logical clock: 123 
+Received message; System Time: 2023-03-05 14:32:07.424484; Logical clock: 123 
+Internal event; System Time: 2023-03-05 14:32:07.624701; Logical clock: 124 
+Internal event; System Time: 2023-03-05 14:32:07.824956; Logical clock: 125 
+Internal event; System Time: 2023-03-05 14:32:08.025204; Logical clock: 126 
+Internal event; System Time: 2023-03-05 14:32:08.225433; Logical clock: 127 
+Received message; System Time: 2023-03-05 14:32:08.425679; Logical clock: 127 
+Send message 3 to port(s) <map object at 0x7f0491a60730>; System Time: 2023-03-05 14:32:08.625956; Logical clock: 128 
+Send message 2 to port(s) 53048; System Time: 2023-03-05 14:32:08.826206; Logical clock: 129 
+Internal event; System Time: 2023-03-05 14:32:09.026408; Logical clock: 130 
+Internal event; System Time: 2023-03-05 14:32:09.226663; Logical clock: 131 
+Internal event; System Time: 2023-03-05 14:32:09.426925; Logical clock: 132 
+Received message; System Time: 2023-03-05 14:32:09.627146; Logical clock: 132 
+Internal event; System Time: 2023-03-05 14:32:09.827451; Logical clock: 133 
+Send message 1 to port(s) 49908; System Time: 2023-03-05 14:32:10.027758; Logical clock: 134 
+Internal event; System Time: 2023-03-05 14:32:10.227943; Logical clock: 135 
+Send message 3 to port(s) <map object at 0x7f0491a60700>; System Time: 2023-03-05 14:32:10.428292; Logical clock: 136 
+Internal event; System Time: 2023-03-05 14:32:10.628456; Logical clock: 137 
+Send message 3 to port(s) <map object at 0x7f0491a606d0>; System Time: 2023-03-05 14:32:10.828730; Logical clock: 138 
+Internal event; System Time: 2023-03-05 14:32:11.028922; Logical clock: 139 
+Internal event; System Time: 2023-03-05 14:32:11.229162; Logical clock: 140 
+Received message; System Time: 2023-03-05 14:32:11.429413; Logical clock: 140 
+Received message; System Time: 2023-03-05 14:32:11.629642; Logical clock: 140 
+Internal event; System Time: 2023-03-05 14:32:11.829877; Logical clock: 141 
+Internal event; System Time: 2023-03-05 14:32:12.029922; Logical clock: 142 
+Internal event; System Time: 2023-03-05 14:32:12.230157; Logical clock: 143 
+Received message; System Time: 2023-03-05 14:32:12.430396; Logical clock: 143 
+Received message; System Time: 2023-03-05 14:32:12.630608; Logical clock: 143 
+Internal event; System Time: 2023-03-05 14:32:12.830853; Logical clock: 144 
+Internal event; System Time: 2023-03-05 14:32:13.031089; Logical clock: 145 
+Internal event; System Time: 2023-03-05 14:32:13.231331; Logical clock: 146 
+Send message 3 to port(s) <map object at 0x7f0491a60730>; System Time: 2023-03-05 14:32:13.431613; Logical clock: 147 
+Internal event; System Time: 2023-03-05 14:32:13.631786; Logical clock: 148 
+Send message 1 to port(s) 49908; System Time: 2023-03-05 14:32:13.832080; Logical clock: 149 
