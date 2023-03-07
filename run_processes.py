@@ -11,7 +11,10 @@ from _thread import *
 
 
 MAX_RATE = 6
+MAX_INTERNAL_ROLL = 4
 LOCAL_HOST = "127.0.0.1"
+TRIAL = 3
+FOLDER = 'smaller_internal'
 
 
 class Config:
@@ -47,7 +50,7 @@ def producer(other_ports, machine_id):
         clock = 0
         # open a file
         try:
-            with open(f"logs/machine_{machine_id}.log", "w") as file:
+            with open(f"logs/{FOLDER}/trial{TRIAL}_machine_{machine_id}.log", "w") as file:
                 print("Opened")
                 print("Writing to file")
                 file.write(f"Log for machine {machine_id} with rate {rate} \n")
@@ -60,11 +63,12 @@ def producer(other_ports, machine_id):
                         start_time = time.time()
                         try:
                             msg = msg_queue.get_nowait()
-                            clock = do_process_msg(msg, clock, file)
+                            clock = do_process_msg(
+                                msg, clock, file, msg_queue.qsize())
                         except queue.Empty:
-                            op = random.randint(1, 10)
+                            op = random.randint(1, MAX_INTERNAL_ROLL)
                             clock = do_event(
-                                op, clock, other_machine_sockets, file)
+                                op, clock, other_machine_sockets, file, msg_queue.qsize())
                         time.sleep(1/rate-(time.time()-start_time))
         except IOError:
             print("Error opening file")
@@ -72,46 +76,46 @@ def producer(other_ports, machine_id):
         print("Error connecting producer: %s" % e)
 
 
-def do_process_msg(msg_clock: str, local_clock: int, file) -> int:
+def do_process_msg(msg_clock: str, local_clock: int, file, qsize) -> int:
     try:
         update_clock = max(local_clock, int(msg_clock) + 1)
         print("Writing to file")
 
         file.write(
-            f"Received message; System Time: {datetime.now()}; Logical clock: {update_clock} \n")
+            f"Received message; Queue Size: {qsize}; System Time: {datetime.now()}; Logical clock: {update_clock} \n")
         file.flush()
         return update_clock
     except IOError:
         print("Error writing to file")
 
 
-def do_event(op: int, clock: int, other_machines: list, file) -> int:
+def do_event(op: int, clock: int, other_machines: list, file, qsize) -> int:
     match op:
         case 1:
             dest_sock = other_machines[0]
             dest_sock.send(f"{str(clock)}\n".encode('ascii'))
-            clock = do_send(clock, 1, dest_sock.getsockname()[1], file)
+            clock = do_send(clock, 1, dest_sock.getsockname()[1], file, qsize)
         case 2:
             dest_sock = other_machines[1]
             dest_sock.send(f"{str(clock)}\n".encode('ascii'))
-            clock = do_send(clock, 2, dest_sock.getsockname()[1], file)
+            clock = do_send(clock, 2, dest_sock.getsockname()[1], file, qsize)
         case 3:
             for machine in other_machines:
                 machine.send(f"{str(clock)}\n".encode('ascii'))
-            clock = do_send(clock, 3, map(
-                lambda x: x.getsockname()[1], other_machines), file)
+            clock = do_send(clock, 3, list(map(
+                lambda x: x.getsockname()[1], other_machines)), file, qsize)
         case _:
-            clock = do_local_process(clock, file)
+            clock = do_local_process(clock, file, qsize)
     return clock
 
 
-def do_local_process(local_clock: int, file) -> int:
+def do_local_process(local_clock: int, file, qsize) -> int:
     try:
         update_clock = local_clock + 1
         print("Writing to file")
 
         file.write(
-            f"Internal event; System Time: {datetime.now()}; Logical clock: {update_clock} \n")
+            f"Internal event; Queue Size: {qsize}; System Time: {datetime.now()}; Logical clock: {update_clock} \n")
         file.flush()
 
         return update_clock
@@ -119,13 +123,13 @@ def do_local_process(local_clock: int, file) -> int:
         print("Error writing to file")
 
 
-def do_send(local_clock: int, op_code: int, port: list, file) -> int:
+def do_send(local_clock: int, op_code: int, port: list, file, qsize) -> int:
     try:
         update_clock = local_clock + 1
         print("Writing to file")
 
         file.write(
-            f"Send message {op_code} to port(s) {str(port)}; System Time: {datetime.now()}; Logical clock: {update_clock} \n")
+            f"Send message {op_code} to port(s) {str(port)}; Queue Size: {qsize}; System Time: {datetime.now()}; Logical clock: {update_clock} \n")
         file.flush()
 
         return update_clock

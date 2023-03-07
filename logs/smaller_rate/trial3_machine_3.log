@@ -1,0 +1,128 @@
+Log for machine 3 with rate 2 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:58:39.716337; Logical clock: 1 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:58:40.216675; Logical clock: 2 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:58:40.721281; Logical clock: 3 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:58:41.224378; Logical clock: 4 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:58:41.726502; Logical clock: 4 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:58:42.227412; Logical clock: 5 
+Send message 3 to port(s) [51510, 51511]; Queue Size: 0; System Time: 2023-03-06 22:58:42.732787; Logical clock: 6 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:58:43.235622; Logical clock: 7 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:58:43.739974; Logical clock: 8 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:58:44.243323; Logical clock: 9 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:58:44.744656; Logical clock: 9 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:58:45.246052; Logical clock: 10 
+Send message 3 to port(s) [51510, 51511]; Queue Size: 0; System Time: 2023-03-06 22:58:45.749373; Logical clock: 11 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:58:46.254025; Logical clock: 12 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:58:46.755422; Logical clock: 13 
+Send message 1 to port(s) 51510; Queue Size: 0; System Time: 2023-03-06 22:58:47.256834; Logical clock: 14 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:58:47.760967; Logical clock: 14 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:58:48.264124; Logical clock: 15 
+Send message 1 to port(s) 51510; Queue Size: 0; System Time: 2023-03-06 22:58:48.766454; Logical clock: 16 
+Send message 1 to port(s) 51510; Queue Size: 0; System Time: 2023-03-06 22:58:49.267388; Logical clock: 17 
+Send message 3 to port(s) [51510, 51511]; Queue Size: 0; System Time: 2023-03-06 22:58:49.770206; Logical clock: 18 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:58:50.274797; Logical clock: 19 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:58:50.776731; Logical clock: 20 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:58:51.278196; Logical clock: 21 
+Send message 2 to port(s) 51511; Queue Size: 0; System Time: 2023-03-06 22:58:51.779375; Logical clock: 22 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:58:52.282730; Logical clock: 22 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:58:52.786924; Logical clock: 23 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:58:53.291184; Logical clock: 23 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:58:53.795327; Logical clock: 24 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:58:54.296695; Logical clock: 25 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:58:54.798027; Logical clock: 26 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:58:55.298153; Logical clock: 27 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:58:55.803032; Logical clock: 27 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:58:56.303180; Logical clock: 28 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:58:56.805138; Logical clock: 29 
+Send message 2 to port(s) 51511; Queue Size: 0; System Time: 2023-03-06 22:58:57.309565; Logical clock: 30 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:58:57.814190; Logical clock: 31 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:58:58.314338; Logical clock: 32 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:58:58.819098; Logical clock: 33 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:58:59.320821; Logical clock: 33 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:58:59.821527; Logical clock: 34 
+Send message 2 to port(s) 51511; Queue Size: 0; System Time: 2023-03-06 22:59:00.323691; Logical clock: 35 
+Send message 3 to port(s) [51510, 51511]; Queue Size: 0; System Time: 2023-03-06 22:59:00.824840; Logical clock: 36 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:01.326234; Logical clock: 37 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:01.827472; Logical clock: 38 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:02.328785; Logical clock: 39 
+Send message 3 to port(s) [51510, 51511]; Queue Size: 0; System Time: 2023-03-06 22:59:02.830264; Logical clock: 40 
+Send message 1 to port(s) 51510; Queue Size: 0; System Time: 2023-03-06 22:59:03.331572; Logical clock: 41 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:03.836374; Logical clock: 42 
+Send message 2 to port(s) 51511; Queue Size: 0; System Time: 2023-03-06 22:59:04.339590; Logical clock: 43 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:59:04.839890; Logical clock: 43 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:05.342283; Logical clock: 44 
+Send message 3 to port(s) [51510, 51511]; Queue Size: 0; System Time: 2023-03-06 22:59:05.844046; Logical clock: 45 
+Received message; Queue Size: 1; System Time: 2023-03-06 22:59:06.346704; Logical clock: 45 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:59:06.851436; Logical clock: 45 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:07.353957; Logical clock: 46 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:07.854276; Logical clock: 47 
+Send message 1 to port(s) 51510; Queue Size: 0; System Time: 2023-03-06 22:59:08.357953; Logical clock: 48 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:59:08.862231; Logical clock: 48 
+Send message 3 to port(s) [51510, 51511]; Queue Size: 0; System Time: 2023-03-06 22:59:09.365843; Logical clock: 49 
+Send message 2 to port(s) 51511; Queue Size: 0; System Time: 2023-03-06 22:59:09.867682; Logical clock: 50 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:10.371669; Logical clock: 51 
+Send message 2 to port(s) 51511; Queue Size: 0; System Time: 2023-03-06 22:59:10.873111; Logical clock: 52 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:59:11.376254; Logical clock: 52 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:59:11.880433; Logical clock: 52 
+Received message; Queue Size: 1; System Time: 2023-03-06 22:59:12.381819; Logical clock: 53 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:59:12.885104; Logical clock: 53 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:59:13.390331; Logical clock: 54 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:59:13.891605; Logical clock: 55 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:14.392950; Logical clock: 56 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:14.897795; Logical clock: 57 
+Send message 1 to port(s) 51510; Queue Size: 0; System Time: 2023-03-06 22:59:15.401068; Logical clock: 58 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:15.902257; Logical clock: 59 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:16.406717; Logical clock: 60 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:59:16.910555; Logical clock: 60 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:17.414149; Logical clock: 61 
+Send message 1 to port(s) 51510; Queue Size: 0; System Time: 2023-03-06 22:59:17.918372; Logical clock: 62 
+Send message 3 to port(s) [51510, 51511]; Queue Size: 0; System Time: 2023-03-06 22:59:18.419634; Logical clock: 63 
+Send message 2 to port(s) 51511; Queue Size: 0; System Time: 2023-03-06 22:59:18.922848; Logical clock: 64 
+Send message 3 to port(s) [51510, 51511]; Queue Size: 0; System Time: 2023-03-06 22:59:19.427812; Logical clock: 65 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:19.927995; Logical clock: 66 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:20.430315; Logical clock: 67 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:20.932909; Logical clock: 68 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:59:21.435853; Logical clock: 68 
+Send message 3 to port(s) [51510, 51511]; Queue Size: 0; System Time: 2023-03-06 22:59:21.939567; Logical clock: 69 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:22.441073; Logical clock: 70 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:22.945258; Logical clock: 71 
+Send message 2 to port(s) 51511; Queue Size: 0; System Time: 2023-03-06 22:59:23.449148; Logical clock: 72 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:23.950424; Logical clock: 73 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:24.451720; Logical clock: 74 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:24.953069; Logical clock: 75 
+Send message 3 to port(s) [51510, 51511]; Queue Size: 0; System Time: 2023-03-06 22:59:25.457292; Logical clock: 76 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:25.961057; Logical clock: 77 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:26.462390; Logical clock: 78 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:59:26.963942; Logical clock: 78 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:59:27.465122; Logical clock: 78 
+Send message 3 to port(s) [51510, 51511]; Queue Size: 0; System Time: 2023-03-06 22:59:27.966409; Logical clock: 79 
+Send message 2 to port(s) 51511; Queue Size: 0; System Time: 2023-03-06 22:59:28.470489; Logical clock: 80 
+Send message 1 to port(s) 51510; Queue Size: 0; System Time: 2023-03-06 22:59:28.974552; Logical clock: 81 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:29.477144; Logical clock: 82 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:29.980475; Logical clock: 83 
+Send message 2 to port(s) 51511; Queue Size: 0; System Time: 2023-03-06 22:59:30.484077; Logical clock: 84 
+Received message; Queue Size: 1; System Time: 2023-03-06 22:59:30.985162; Logical clock: 84 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:59:31.486757; Logical clock: 84 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:31.991811; Logical clock: 85 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:32.494609; Logical clock: 86 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:32.998501; Logical clock: 87 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:59:33.502466; Logical clock: 87 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:34.004247; Logical clock: 88 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:34.504711; Logical clock: 89 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:59:35.009265; Logical clock: 90 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:35.513362; Logical clock: 91 
+Send message 2 to port(s) 51511; Queue Size: 0; System Time: 2023-03-06 22:59:36.016863; Logical clock: 92 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:36.521168; Logical clock: 93 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:37.022477; Logical clock: 94 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:37.523845; Logical clock: 95 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:38.028175; Logical clock: 96 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:38.529893; Logical clock: 97 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:39.033140; Logical clock: 98 
+Send message 3 to port(s) [51510, 51511]; Queue Size: 0; System Time: 2023-03-06 22:59:39.536188; Logical clock: 99 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:59:40.041147; Logical clock: 99 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:40.542709; Logical clock: 100 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:59:41.046725; Logical clock: 100 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:41.550537; Logical clock: 101 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:42.051902; Logical clock: 102 
+Received message; Queue Size: 0; System Time: 2023-03-06 22:59:42.553237; Logical clock: 103 
+Internal event; Queue Size: 0; System Time: 2023-03-06 22:59:43.057967; Logical clock: 104 
