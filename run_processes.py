@@ -78,7 +78,7 @@ def producer(other_ports, machine_id):
 
 def do_process_msg(msg_clock: str, local_clock: int, file, qsize) -> int:
     try:
-        update_clock = max(local_clock, int(msg_clock) + 1)
+        update_clock = max(local_clock+1, int(msg_clock) + 1)
         print("Writing to file")
 
         file.write(
