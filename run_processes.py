@@ -26,6 +26,11 @@ class Config:
 
 
 def consumer(conn):
+    '''
+    Reads messages from the client socket and adds them to the machine's message queue.
+
+    conn (socket.socket): client socket to recv messages from
+    '''
     while True:
         data = conn.recv(1024)
         if (int.from_bytes(data, 'big') <= 0):
@@ -40,6 +45,14 @@ def consumer(conn):
 
 
 def producer(other_ports, machine_id):
+    '''
+    Executes the machine. First connects to all other machines as a client, and then performs
+    the spec. Rolls a random number, and depending on the number performs and action. The rate
+    of instructions processed is limited by the global rate of the machine.
+
+    other_ports (list): the other machine's ports
+    machine_id (int): the machine's id used to create the log file.
+    '''
     other_machine_sockets = []
     try:
         for port in other_ports:
@@ -77,6 +90,14 @@ def producer(other_ports, machine_id):
 
 
 def do_process_msg(msg_clock: str, local_clock: int, file, qsize) -> int:
+    '''
+    Processes a message receive and returns the updated clock
+
+    msg_clock (int): the clock parsed from the received message
+    clock (int): the current local clock
+    file (file): the log to write to 
+    qsize (qsize): the size of the message queue (for logging purposes)
+    '''
     try:
         update_clock = max(local_clock+1, int(msg_clock) + 1)
         print("Writing to file")
@@ -90,6 +111,15 @@ def do_process_msg(msg_clock: str, local_clock: int, file, qsize) -> int:
 
 
 def do_event(op: int, clock: int, other_machines: list, file, qsize) -> int:
+    '''
+    Performs an event based on the operation code, and returns the updated clock
+
+    op (int): the operation code 
+    clock (int): the current local clock
+    other_machines (list): the list of connected machines
+    file (file): the log to write to 
+    qsize (qsize): the size of the message queue (for logging purposes)
+    '''
     match op:
         case 1:
             dest_sock = other_machines[0]
@@ -110,6 +140,13 @@ def do_event(op: int, clock: int, other_machines: list, file, qsize) -> int:
 
 
 def do_local_process(local_clock: int, file, qsize) -> int:
+    '''
+    Processes a local tick and returns the updated clock
+
+    clock (int): the current local clock
+    file (file): the log to write to 
+    qsize (qsize): the size of the message queue (for logging purposes)
+    '''
     try:
         update_clock = local_clock + 1
         print("Writing to file")
@@ -124,6 +161,15 @@ def do_local_process(local_clock: int, file, qsize) -> int:
 
 
 def do_send(local_clock: int, op_code: int, port: list, file, qsize) -> int:
+    '''
+    Processes a message send and returns the updated clock
+
+    local_clock (int): the current local clock
+    op_code (int): the operation for the send (1, 2, 3)
+    port (list): the list of ports to send to
+    file (file): the log to write to 
+    qsize (qsize): the size of the message queue (for logging purposes)
+    '''
     try:
         update_clock = local_clock + 1
         print("Writing to file")
@@ -137,7 +183,12 @@ def do_send(local_clock: int, op_code: int, port: list, file, qsize) -> int:
         print("Error writing to file")
 
 
-def init_machine(config):
+def init_machine(config: Config):
+    '''
+    Initializes the machine. Starts the server and listens for connections
+
+    config (Config): configuration of the machine
+    '''
     host = config.host
     port = config.port
     print("starting server| port val:", port)
@@ -150,6 +201,11 @@ def init_machine(config):
 
 
 def machine(config: Config):
+    '''
+    Runs the machine. Initializes the machine, and then executes instructions for the machine
+
+    config (Config): configuration of the machine
+    '''
     # Initialize machine globals
     global msg_queue
     msg_queue = queue.Queue()
