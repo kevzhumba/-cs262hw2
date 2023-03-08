@@ -76,11 +76,7 @@ class Machine:
         '''
         try:
             self._connect_to_other_sockets()
-            # Open a file to write logs to
-            try:
-                self._execute_producer()
-            except IOError:
-                print("Error opening file")
+            self._execute_producer()
         except socket.error as e:
             print("Error connecting producer: %s" % e)
 
@@ -97,15 +93,21 @@ class Machine:
 
     def _execute_producer(self):
         '''Run the producer indefinitely. Open a log to write to and continuously execute cycles according to spec.'''
-        clock = 0
-        with open(f"logs/{FOLDER}/trial{TRIAL}_machine_{self.machine_id}.log", "w") as file:
-            print("Opened")
-            print("Writing to file")
-            file.write(
-                f"Log for machine {self.machine_id} with rate {self.rate} \n")
-            print(f"machine {self.machine_id} has rate {self.rate}")
-            while True:
-                clock = self._execute_one_cycle(clock, file)
+        try:
+            clock = 0
+            # Open log file
+            with open(f"logs/{FOLDER}/trial{TRIAL}_machine_{self.machine_id}.log", "w") as file:
+                print("Opened")
+                print("Writing to file")
+                file.write(
+                    f"Log for machine {self.machine_id} with rate {self.rate} \n")
+                print(f"machine {self.machine_id} has rate {self.rate}")
+                while True:
+                    clock = self._execute_one_cycle(clock, file)
+        except IOError:
+            print("Error opening file")
+        except Exception as e:
+            print("Error executing producer: %s" % e)
 
     def _execute_one_cycle(self, clock: int, file):
         '''
