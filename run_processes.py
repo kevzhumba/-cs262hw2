@@ -13,7 +13,7 @@ from _thread import *
 MAX_RATE = 6
 MAX_INTERNAL_ROLL = 10
 LOCAL_HOST = "127.0.0.1"
-TRIAL = 6
+TRIAL = 1
 FOLDER = 'initial_params'
 
 
@@ -74,46 +74,62 @@ class Machine:
         the spec. Rolls a random number, and depending on the number performs and action. The rate
         of instructions processed is limited by the global rate of the machine.
         '''
-        other_machine_sockets = []
         try:
-            # Connect to all other machines
-            for port in self.other_ports:
-                s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                s.connect((LOCAL_HOST, int(port)))
-                other_machine_sockets.append(s)
-                print("Client-side connection success to port val:" +
-                      str(port) + "\n")
-            clock = 0
+            self._connect_to_other_sockets()
             # Open a file to write logs to
             try:
-                with open(f"logs/{FOLDER}/trial{TRIAL}_machine_{self.machine_id}.log", "w") as file:
-                    print("Opened")
-                    print("Writing to file")
-                    file.write(
-                        f"Log for machine {self.machine_id} with rate {self.rate} \n")
-                    print(f"machine {self.machine_id} has rate {self.rate}")
-                    while True:
-                        # Now that we have all the connections, we also want to initialize a clock and a file to print to.
-                        for i in range(self.rate):
-                            print(
-                                f"machine {self.machine_id} processing instruction")
-                            start_time = time.time()
-                            # Try getting a message from the queue, if empty then do an event
-                            try:
-                                msg = self.msg_queue.get_nowait()
-                                clock = self.do_process_msg(
-                                    msg, clock, file)
-                            except queue.Empty:
-                                op = random.randint(1, MAX_INTERNAL_ROLL)
-                                clock = self.do_event(
-                                    op, clock, other_machine_sockets, file)
-
-                            # Sleep for the remainder of the time
-                            time.sleep(1/self.rate-(time.time()-start_time))
+                self._execute_producer()
             except IOError:
                 print("Error opening file")
         except socket.error as e:
             print("Error connecting producer: %s" % e)
+
+    def _connect_to_other_sockets(self):
+        # Connect to all other machines, return a list of all the sockets
+        other_machine_sockets = []
+        for port in self.other_ports:
+            s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            s.connect((LOCAL_HOST, int(port)))
+            other_machine_sockets.append(s)
+            print("Client-side connection success to port val:" +
+                  str(port) + "\n")
+        self.other_machine_sockets = other_machine_sockets
+
+    def _execute_producer(self):
+        '''Run the producer indefinitely. Open a log to write to and continuously execute cycles according to spec.'''
+        clock = 0
+        with open(f"logs/{FOLDER}/trial{TRIAL}_machine_{self.machine_id}.log", "w") as file:
+            print("Opened")
+            print("Writing to file")
+            file.write(
+                f"Log for machine {self.machine_id} with rate {self.rate} \n")
+            print(f"machine {self.machine_id} has rate {self.rate}")
+            while True:
+                clock = self._execute_one_cycle(clock, file)
+
+    def _execute_one_cycle(self, clock: int, file):
+        '''
+        Execute one clock cycle for the machine and return the updated logical clock.
+        The number of actions is determined by the rate of the machine. 
+        Actions are determined by the spec.
+        '''
+        for i in range(self.rate):
+            print(
+                f"machine {self.machine_id} processing instruction")
+            start_time = time.time()
+            # Try getting a message from the queue, if empty then do an event
+            try:
+                msg = self.msg_queue.get_nowait()
+                clock = self.do_process_msg(
+                    msg, clock, file)
+            except queue.Empty:
+                op = random.randint(1, MAX_INTERNAL_ROLL)
+                clock = self.do_event(
+                    op, clock, self.other_machine_sockets, file)
+
+            # Sleep for the remainder of the time
+            time.sleep(1/self.rate-(time.time()-start_time))
+        return clock
 
     def do_process_msg(self, msg_clock: str, local_clock: int, file) -> int:
         '''
